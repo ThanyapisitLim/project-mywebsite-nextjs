@@ -13,8 +13,7 @@ export default function MainImg() {
         />
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/40 z-0" />
-
+        <div className="absolute inset-0 bg-black/60 z-[1]" />
         {/* Content */}
         <div className="absolute bottom-10 left-10 z-10 text-white space-y-4 bg-black p-10 rounded-2xl">
           <h1 className="text-5xl md:text-6xl font-bold">Hello, I'm Thanyapisit</h1>

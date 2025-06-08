@@ -42,73 +42,75 @@ export default function About() {
 
     return (
         <>
-            <div className="bg-white shadow-lg rounded-3xl p-10 my-8 mx-50">
-                <h1 className="text-4xl font-bold">About Me</h1>
-                <hr className="my-10" />
-                <section>
-                    <div className="space-y-3 text-xl">
-                        <p className="font-bold text-2xl">Hello! My name is Thanyapisit.</p>
-                        <p>
-                            I am currently studying at Srinakharinwirot University, in the
-                            Faculty of Social Communication Innovation, majoring in
-                            Communication Computer.
-                        </p>
-                        <p>
-                            At university, I have learned Swift programming and iOS development
-                            as part of my curriculum. Beyond the classroom, I am continuously
-                            improving my skills in web development — including both frontend and
-                            backend — as well as working with databases.
-                        </p>
-                        <p>
-                            I’m passionate about creating clean, user-friendly web applications
-                            and always eager to explore new technologies in the development
-                            world.
-                        </p>
-                    </div>
-                </section>
-
-                <section className="my-10">
-                    <h2 className="text-2xl font-semibold mb-3">Projects I’d Like to Showcase</h2>
-                    <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                        {repos.map((repo) => (
-                            <li
-                                key={repo.id}
-                                className="border p-4 rounded shadow hover:shadow-md transition-shadow"
-                            >
-                                <a
-                                    href={repo.html_url}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="text-xl font-semibold text-blue-600 hover:underline"
+            <div>
+                <div className="bg-white shadow-lg rounded-3xl p-10 my-8 mx-50">
+                    <h1 className="text-4xl font-bold">About Me</h1>
+                    <hr className="my-10" />
+                    <section>
+                        <div className="space-y-3 text-xl">
+                            <p className="font-bold text-2xl">Hello! My name is Thanyapisit.</p>
+                            <p>
+                                I am currently studying at Srinakharinwirot University, in the
+                                Faculty of Social Communication Innovation, majoring in
+                                Communication Computer.
+                            </p>
+                            <p>
+                                At university, I have learned Swift programming and iOS development
+                                as part of my curriculum. Beyond the classroom, I am continuously
+                                improving my skills in web development — including both frontend and
+                                backend — as well as working with databases.
+                            </p>
+                            <p>
+                                I’m passionate about creating clean, user-friendly web applications
+                                and always eager to explore new technologies in the development
+                                world.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+                <div className="bg-white shadow-lg rounded-3xl p-10 my-8 mx-50">
+                    <section className="my-10">
+                        <h2 className="text-2xl font-semibold mb-3">Projects I’d Like to Showcase</h2>
+                        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                            {repos.map((repo) => (
+                                <li
+                                    key={repo.id}
+                                    className="border p-4 rounded shadow hover:shadow-md transition-shadow"
                                 >
-                                    {repo.name === "project-fsstore-nextjs"
-                                        ? "🛒 FS Store (Next.js)"
-                                        : repo.name === "project-todoapp-nextjs"
-                                            ? "📝 To-Do App (Next.js)"
-                                            : repo.name === "practice-ajaek-bootcamp"
-                                                ? "💻 Ajaek Bootcamp Practice"
-                                                : repo.name}
-                                </a>
-                                <p className="text-sm text-gray-700">
-                                    {repo.description || "No description provided."}
-                                </p>
-                            </li>
-                        ))}
-                    </ul>
-
-                </section>
-
-                <section>
-                    <h2 className="text-2xl font-semibold mb-3">Goals</h2>
-                    <p>
-                        Right now, I’m passionate about becoming a web developer. I have a good understanding of various concepts such as fetching APIs, API routing, working with Next.js, Node.js, and using npm.
-                    </p>
-                    <p>
-                        However, in the future, my goals may evolve into something even greater — as the rising trend in AI continues to grow rapidly, it’s an area I’m also interested in exploring further.
-                    </p>
-                </section>
-
-                <div>
+                                    <a
+                                        href={repo.html_url}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-xl font-semibold text-blue-600 hover:underline"
+                                    >
+                                        {repo.name === "project-fsstore-nextjs"
+                                            ? "🛒 FS Store (Next.js)"
+                                            : repo.name === "project-todoapp-nextjs"
+                                                ? "📝 To-Do App (Next.js)"
+                                                : repo.name === "practice-ajaek-bootcamp"
+                                                    ? "💻 Ajaek Bootcamp Practice"
+                                                    : repo.name}
+                                    </a>
+                                    <p className="text-sm text-gray-700">
+                                        {repo.description || "No description provided."}
+                                    </p>
+                                </li>
+                            ))}
+                        </ul>
+                    </section>
+                </div>
+                <div className="bg-white shadow-lg rounded-3xl p-10 my-8 mx-50">
+                    <section>
+                        <h2 className="text-2xl font-semibold mb-3">Goals</h2>
+                        <p>
+                            Right now, I’m passionate about becoming a web developer. I have a good understanding of various concepts such as fetching APIs, API routing, working with Next.js, Node.js, and using npm.
+                        </p>
+                        <p>
+                            However, in the future, my goals may evolve into something even greater — as the rising trend in AI continues to grow rapidly, it’s an area I’m also interested in exploring further.
+                        </p>
+                    </section>
+                </div>
+                <div className="bg-white shadow-lg rounded-3xl p-10 my-8 mx-50">
                     {/* Skill Section */}
                     <h1 className="text-3xl font-bold my-5">Skill</h1>
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
