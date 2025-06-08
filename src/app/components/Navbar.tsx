@@ -7,7 +7,7 @@ export default function Navbar() {
 
             <ul className="flex space-x-5">
                 <Link className="hover:bg-gray-200 rounded-2xl p-3 transition duration-200" href="/">Home</Link>
-                <Link className="hover:bg-gray-200 rounded-2xl p-3 transition duration-200" href="/project">Project</Link>
+                <Link className="hover:bg-gray-200 rounded-2xl p-3 transition duration-200" href="/projects">Project</Link>
                 <Link className="hover:bg-gray-200 rounded-2xl p-3 transition duration-200" href="/resume">Resume</Link>
             </ul>
         </nav>
