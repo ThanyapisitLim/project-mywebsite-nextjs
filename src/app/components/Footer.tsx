@@ -2,7 +2,7 @@ export default function Footer() {
     return (
         <>
             <hr className="mx-10 my-5 h-[1px] border-0 rounded-2xl bg-gray-400" />
-            <div className="flex justify-between mx-10">
+            <div className="flex justify-between m-10">
                 <div>
                     <h1>Thanyapisit Limpakanon</h1>
                     <div></div>
